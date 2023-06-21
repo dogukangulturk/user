@@ -55,8 +55,7 @@ Bu proje, Java Spring Boot ile geliştirilmiş bir API sunucusudur. API, kullan�
   - Request Body:
     ```
     {
-      "name": "Editor",
-      "description": "İçerik editörü rolü"
+      "name": "Editor"
     }
     ```
   - Response: Güncellenen rol bilgileriyle birlikte 200 OK yanıtı döner.
