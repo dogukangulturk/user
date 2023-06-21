@@ -14,8 +14,7 @@ Bu proje, Java Spring Boot ile geliştirilmiş bir API sunucusudur. API, kullan�
     {
       "username": "kullanici1",
       "password": "sifre123",
-      "email": "kullanici1@example.com",
-      "roles": [1, 2]
+      "roles": [1]
     }
     ```
   - Response: Oluşturulan kullanıcı bilgileriyle birlikte 200 OK yanıtı döner.
@@ -27,7 +26,7 @@ Bu proje, Java Spring Boot ile geliştirilmiş bir API sunucusudur. API, kullan�
     ```
     {
       "username": "kullanici1",
-      "roles": [1]
+      "roles": [2]
     }
     ```
   - Response: Güncellenen kullanıcı bilgileriyle birlikte 200 OK yanıtı döner.
