@@ -30,8 +30,6 @@ public class RoleService {
         Role existingRole = roleRepository.findById(roleId).orElse(null);
         if (existingRole != null) {
             existingRole.setName(roleDTO.getName());
-            // Diğer özellikleri de güncelle
-
             Role updatedRole = roleRepository.save(existingRole);
             return convertToRoleDTO(updatedRole);
         }
@@ -46,7 +44,6 @@ public class RoleService {
     private Role convertToRole(RoleDTO roleDTO) {
         Role role = new Role();
         role.setName(roleDTO.getName());
-        // Diğer özellikleri de ekle
         return role;
     }
 
@@ -54,7 +51,6 @@ public class RoleService {
         RoleDTO roleDTO = new RoleDTO();
         roleDTO.setId(role.getId());
         roleDTO.setName(role.getName());
-        // Diğer özellikleri de ekle
         return roleDTO;
     }
 
