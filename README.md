@@ -18,6 +18,16 @@ Bu proje, Java Spring Boot ile geliştirilmiş bir API sunucusudur. API, kullan�
     }
     ```
   - Response: Oluşturulan kullanıcı bilgileriyle birlikte 200 OK yanıtı döner.
+ 
+- Tüm Kullanıcıları Getirme:
+  - Endpoint: GET /users
+  - Açıklama: Tüm kullanıcıları getirmek için bu endpointi kullanın.
+  - Response: Tüm kullanıcıların bilgileriyle birlikte 200 OK yanıtı döner.
+
+- Belirli Bir Kullanıcıyı Getirme:
+  - Endpoint: GET /users/{userId}
+  - Açıklama: Belirli bir kullanıcıyı getirmek için bu endpointi kullanın.
+  - Response: Belirtilen kullanıcının bilgileriyle birlikte 200 OK yanıtı döner.
 
 - Kullanıcı Güncelleme:
   - Endpoint: PUT /users/{userId}
@@ -48,6 +58,16 @@ Bu proje, Java Spring Boot ile geliştirilmiş bir API sunucusudur. API, kullan�
     }
     ```
   - Response: Oluşturulan rol bilgileriyle birlikte 200 OK yanıtı döner.
+  - 
+- Tüm Rolleri Getirme:
+  - Endpoint: GET /roles
+  - Açıklama: Tüm rolleri getirmek için bu endpointi kullanın.
+  - Response: Tüm rollerin bilgileriyle birlikte 200 OK yanıtı döner.
+
+- Belirli Bir Rolü Getirme:
+  - Endpoint: GET /roles/{roleId}
+  - Açıklama: Belirli bir rolü getirmek için bu endpointi kullanın.
+  - Response: Belirtilen rolün bilgileriyle birlikte 200 OK yanıtı döner.
 
 - Rol Güncelleme:
   - Endpoint: PUT /roles/{roleId}
